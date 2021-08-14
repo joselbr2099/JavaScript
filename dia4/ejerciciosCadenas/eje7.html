@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  
+<body>
+
+  <p>resultado de script abajo</p>
+  <p id="resultado"></p>
+
+  <script>
+        // se define la variable
+		let numeros="332453532235";
+		let numArr=numeros.split("");
+		let total=0;
+
+		for(let numero of numArr){
+			total+=Number(numero);
+		}
+
+    document.getElementById("resultado").innerHTML =total
+  </script>
+
+
+<html>
+  

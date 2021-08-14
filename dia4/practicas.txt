@@ -1,0 +1,26 @@
+0.- sume los elementos de un array
+nums = [4, 5, 2, 93, 3, 5]
+
+1.- cuente cuantos elementos mayores a 3 existen en:
+rainfall_mi = "1.65, 1.46, 2.05, 3.03, 3.35, 3.46, 2.83, 3.23, 3.5, 2.52, 2.8, 1.85"
+
+2.- determine cuantas palabras empiezan y terminan con la misma letra incluyendo una sola letra
+
+sentence = "students flock to the arb for a variety of outdoor activities such as jogging and picnicking"
+
+3.- cuente el numero de palabras que contiene la letra "w" en la siguiente lista:
+
+items = ["whirring", "wow!", "calendar", "wry", "glass", "", "llama","tumultuous","owing"]
+
+4.- cuente el numero de palabras que contengan las letras "a" o "e" pero no ambas en:
+
+sentence = "python is a high level general purpose programming language that can be applied to many different classes of problems."
+
+5,- cuente el numero de vocales que hay en S:
+
+s = "singing in the rain and playing in the rain are two entirely different situations but both can be fun"
+vowels = ['a','e','i','o','u']
+
+6.- cuente cuantas palabras hay en la lista:
+
+lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]

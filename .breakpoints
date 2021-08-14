@@ -1,0 +1,28 @@
+{
+  "files": {
+    "dia1/example1/estruct.html": [
+      {
+        "id": "2b4ba982-04f5-4c47-88fd-f5db0c50a378",
+        "line": 24,
+        "version": 7,
+        "index": 610
+      }
+    ],
+    "dia3/ejemplo8/breakContinue.js": [
+      {
+        "id": "bd1fe215-683d-4616-84d5-aaf1baa48449",
+        "line": 65,
+        "version": 3,
+        "index": 879
+      }
+    ],
+    "hola.js": [
+      {
+        "id": "6040e7cc-fb9c-48c0-9315-cf16372f7ab5",
+        "line": 1,
+        "version": 20,
+        "index": 0
+      }
+    ]
+  }
+}

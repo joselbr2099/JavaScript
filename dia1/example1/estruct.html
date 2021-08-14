@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <! --
+  ejemplo como cargar un script en javascript
+  -->
+
+  <! -- escribiendo el propio codigo -->
+  <script>
+    alert( 'Hello, world! #1' );
+  </script>
+
+  <! -- llamando al script -->
+  <script src="struct.js"></script>
+  <script src="struct2.js"></script>
+
+  <! -- llamando al script desde un sitio -->
+  <script src='https://www.preemptive.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+  
+  <! -- esto se ignora -->
+  <script src="struct.js">
+    alert("hola mundo desde otro lado"); // the content is ignored, because src is set
+  </script>
+
+<body>
+
+  <p>Before the script...</p>
+
+  <! -- en la seccion body de la pagina -->
+  <script>
+    alert( 'Hello, world! #4' );
+  </script>
+
+
+  <p>...After the script.</p>
+
+</body>
+
+</html>

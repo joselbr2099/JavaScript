@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  
+
+<body>
+
+  <p>resultado de script abajo</p>
+  <p id="resultado"></p>
+
+  <script>
+        // se define la variable
+		let cadena="Hola mundo";
+		let result='';
+		for(let i=0;i<cadena.length;i++){
+			if(i%2==0){
+				result+=cadena[i];
+			}
+		}
+
+    document.getElementById("resultado").innerHTML =result;
+  </script>
+
+
+</body>

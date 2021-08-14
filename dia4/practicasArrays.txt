@@ -1,0 +1,14 @@
+1.- imprima cada caracter de "Hello world" con el signo "!"
+2.- cuente el numero de caracteres en la lista:
+    cawdra = ['candy', 'daisy', 'pear', 'peach', 'gem', 'crown']
+3.- sume los elementos del array:
+    lst = [5, 10, 3, 8, 94, 2, 4, 9]
+4.- convierta:
+    str1 = "I love python"
+    en un array de caracteres: lst=['I','l','o'...] 
+    
+5.- cuente cuantas veces hay la letra 'e' en:
+  sentence = "javascript is a high level general purpose programming language that can be applied to many different classes of problems."
+
+6.- agregue "ed" a cada palabra de la siguiente lista y guardelas e un nuevo array
+wrds = ["end", 'work', "play", "start", "walk", "look", "open", "rain", "learn", "clean"]  
