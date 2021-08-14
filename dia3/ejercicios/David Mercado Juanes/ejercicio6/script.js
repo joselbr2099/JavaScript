@@ -7,3 +7,5 @@ for (let i = 0; i <= iteracion; i++) {
     contador = contador + i;
 }
 console.log(contador);
+
+//tambien puede ser contador+=i

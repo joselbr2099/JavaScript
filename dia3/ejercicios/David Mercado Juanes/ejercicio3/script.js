@@ -5,3 +5,5 @@ while (i <= cantidad) {
   console.log("Iteracion N° " + i + " David Mercado Juanes");
   i++;
 }
+
+//el incremento es n+1

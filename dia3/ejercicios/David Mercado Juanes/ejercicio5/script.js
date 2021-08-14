@@ -9,3 +9,5 @@ for (let i = 0; i < iteraciones; i++) {
     }
     // console.log("hola");
 }
+
+//puede usar i en lugar de una variable adicional

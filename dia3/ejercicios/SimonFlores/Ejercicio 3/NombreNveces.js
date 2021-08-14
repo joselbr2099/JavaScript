@@ -6,3 +6,4 @@ while (n <= 4) {
     ++n;
 }
 
+//n es el numero de repeticiones en tu caso deberia ser n=4

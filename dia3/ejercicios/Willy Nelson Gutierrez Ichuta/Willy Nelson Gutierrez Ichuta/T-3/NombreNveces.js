@@ -5,4 +5,3 @@ while (n <= 4) {
     console.log("MI NOMBRE ES: WILLY_NELSON");
     ++n;
 }
-

@@ -10,3 +10,5 @@ while (n<=4){
     i=i+2;
     ++n;
 }
+
+//imprime n+1 
