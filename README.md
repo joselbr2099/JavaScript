@@ -14,3 +14,4 @@ instructor: Jose Luis Blas Ralde
 1. Variables y operadores
 1. Estructuras de control
 1. Cadenas y arrays
+1. Maps y funciones
