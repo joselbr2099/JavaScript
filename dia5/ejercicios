@@ -1,11 +1,11 @@
 1.- sume las notas totales de:
   Junior = {'SI 206':4, 'SI 310':4, 'BL 300':3, 'TO 313':3, 'BCOM 350':1, 'MO 300':3}
-2.- cree un nuevo diccionario que contenga la frecuencia de cada caracter en:
+2.- cree un nuevo map que contenga la frecuencia de cada caracter en:
   str1 = "peter piper picked a peck of pickled peppers"
 
-3.- cree un diccionario donde se encuentre la frequencia de cada palabra de:
+3.- cree un map donde se encuentre la frequencia de cada palabra de:
   sent = "Singing in the rain and playing in the rain are two entirely different situations but both can be good"
-4.- cree un diccionario con cada caracter de:
+4.- cree un map con cada caracter de:
     sally = "sally sells sea shells by the sea shore"
     y muestre el caracter con mas frecuencia
     

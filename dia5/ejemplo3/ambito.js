@@ -1,4 +1,4 @@
-"use strict";
+ "use strict";
 
 //variables globales
 let numa=3;
