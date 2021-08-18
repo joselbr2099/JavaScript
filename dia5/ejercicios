@@ -1,5 +1,9 @@
 1.- sume las notas totales de:
   Junior = {'SI 206':4, 'SI 310':4, 'BL 300':3, 'TO 313':3, 'BCOM 350':1, 'MO 300':3}
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 57711a9600b24df50ace2f49989c8ade62c4b7f9
 2.- cree un nuevo map que contenga la frecuencia de cada caracter en:
   str1 = "peter piper picked a peck of pickled peppers"
 

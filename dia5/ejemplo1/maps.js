@@ -27,7 +27,7 @@ map.clear() vacia un mapa
 map1.set("edad",15);
 map1.set(1,"uno");
 map1.set(true,"verdad")
-console.log("map1: ",map1);s
+console.log("map1: ",map1);
 
 //retorna el valor de una clave
 console.log(map1.get("edad"));
@@ -36,7 +36,7 @@ console.log(map1["edad"]); //esto no funciona para maps
 
 
 //verifica si existe una clave en el map
-let result=map1.has("edad")? "la clave existe": "la clave no existe";
+let result= map1.has("edad") ? "la clave existe": "la clave no existe";
 console.log(result);
 
 //se obtiene el tamaño de un map
@@ -48,14 +48,14 @@ for(const valor of map1){
     console.log("llave+valor: "+valor);
 }
 
-//itera sobre el map y retorna llave y valor por separado
-for(const [llave, valor] of map1){
-    console.log("llave: "+llave+" valor: "+valor);
+//itera sobre el map y retorna clave y valor por separado
+for(const [clave, valor] of map1){
+    console.log("clave: "+clave+" valor: "+valor);
 }
 
 //itera sobre las llaves
-for(const llave of map1.keys()){
-    console.log("llave: "+llave);
+for(const clave of map1.keys()){
+    console.log("clave: "+clave);
 }
 
 //itera sobre los valores
