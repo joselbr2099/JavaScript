@@ -5,7 +5,8 @@ class Perro{
 
   //se define lo(s) atributos
   razaPerro="generico";
-
+  tamaño;
+  nombre;
   //constructor por defecto
   constructor(raza,nombre){
     this.razaPerro=raza;
