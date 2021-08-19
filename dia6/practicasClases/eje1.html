@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+  
+
+<body>
+
+  <p>resultado de script abajo</p>
+  <p id="resultado"></p>
+
+  <script>
+    
+    class Estudiante{
+      
+      //definimos los atributos
+      nombre;
+      edad;
+      fechaNac;
+      sexo;
+      carnet;
+
+      //constructor
+      constructor(a,b,c,d,e){
+        this.nombre=a;
+        this.edad=b;
+        this.fechaNac=c;
+        this.sexo=d;
+      }
+
+      //metodos
+      estudiar(){
+        console.log("estoy estudiando");
+      }
+
+      set carnetNum(numero){
+        this.carnet=numero;
+      }
+
+      get carnetNum(){
+        return this.carnet;
+      }
+    }
+
+    //creamos la instancia de la clase Estudiante
+    let estudiante=new Estudiante("jose","15","ayer","noBinario");
+    estudiante.carnetNum=234243;
+    console.log(estudiante.carnetNum);    
+    let result=estudiante.carnetNum;
+    
+    document.getElementById("resultado").innerHTML =result;
+  </script>
+
+
+</body>
+
+</html>
