@@ -29,7 +29,7 @@ class Perro extends Animal{
 
     //para la clase padre
     super(); //se llama al constructor de la clase padre
-    //super.tipo="perro"; //se establece el valor por defecto del atributo base
+    super.tipo="perro"; //se establece el valor por defecto del atributo base
 
     this.razaPerro=raza;
     this.nombre=nombre //puede declararse otro atributo aqui
