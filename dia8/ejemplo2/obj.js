@@ -56,8 +56,8 @@ estu.getEdad();
 
 console.log("-------------------------");
 //opt2-----------------------------------------------
-function EstudianteObj2(){
-  this.nombreStu,
+function EstudianteObj2(nombre){
+  this.nombreStu=nombre,
   this.edad=15,
   this.saludar=function(){
     console.log("hola compañeros");
@@ -70,7 +70,7 @@ function EstudianteObj2(){
   }
 }
 
-let estu2=new EstudianteObj2();
-console.log(estu2.nombre);
+let estu2=new EstudianteObj2("jose");
+console.log(estu2.nombreStu);
 estu2.saludar2('mojo');
 estu2.getEdad();

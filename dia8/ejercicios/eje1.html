@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  
+
+<body>
+
+  <p>resultado de script abajo</p>
+  <p id="resultado"></p>
+
+  <script>
+    //objeto para sumar dos numeros
+    
+    let sumObj={
+      numa:0,
+      numb:0,
+      suma:function(){
+        return this.numa+this.numb;
+      }
+    }
+
+    //se establecen los valores
+    sumObj.numa=5;
+    sumObj.numb=43;
+    let result=sumObj.suma();
+    document.getElementById("resultado").innerHTML =result;
+  </script>
+
+
+</body>
+
+</html>
