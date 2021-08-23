@@ -22,4 +22,3 @@ alu.carnet=123;
 alu.curso="1ro";
 alu.institucion="eduComser";
 console.log(alu);
-

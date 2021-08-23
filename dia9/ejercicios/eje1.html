@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+  
+
+<body>
+
+  <p>resultado de script abajo</p>
+  <p id="resultado"></p>
+
+  <script>
+    //objeto para sumar dos numeros
+    
+    let sumObj={
+      numa:0,
+      numb:0,
+      suma:function(){
+        return this.numa+this.numb;
+      }
+    }
+
+    let suma=Object.create(sumObj);
+    
+    //se establecen los valores
+    suma.numa=5;
+    suma.numb=43;
+    let result=suma.suma();
+    suma.__proto__.resta=function(){
+      return this.numb-this.numa;
+    }
+    result=suma.resta();
+    document.getElementById("resultado").innerHTML =result;
+    
+    let aux=Object.create(suma);
+
+    suma.__proto__.multi=function(){
+      return this.numa*this.numa;
+    }
+
+  </script>
+
+
+</body>
+
+</html>

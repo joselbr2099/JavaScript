@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+  
+
+<body>
+
+  <p>resultado de script abajo</p>
+  <p id="resultado"></p>
+
+  <script>
+    //objeto para sumar dos numeros
+    
+    function AreaCIrculo(){
+      this.PI=3.14;
+      this.radio=0;
+      this.calcula=function(){
+        return (this.PI * (this.radio**2));
+      }
+    }
+
+    let area=new AreaCIrculo(); 
+    
+    //se establecen los valoress
+    area.radio=5;
+    let result=area.calcula();
+    document.getElementById("resultado").innerHTML =result;
+    
+    //se crea otro objeto
+    area.__proto__.saludo=function(){
+      console.log("hola");
+    }
+
+    let area2=new AreaCIrculo();
+   
+
+  </script>
+
+
+</body>
+
+</html>
