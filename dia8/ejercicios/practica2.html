@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+  
+
+<body>
+
+  <p>resultado de script abajo</p>
+  <p id="resultado"></p>
+
+  <script>
+    //objeto para sumar dos numeros
+
+    function Empleado(nombre,cargo){
+      this.nombre=nombre;
+      this.edad;
+      this.cargo=cargo;
+      this.carnet;
+      this.getNombre=function(){
+        return this.nombre;
+      };
+      this.setNombre=function(x){
+        this.nombre=x;
+      }
+      this.setEdad=function(x){
+        this.edad=x;
+      };
+      this.getInfo=function(){
+        console.log("nombre: "+this.nombre+" edad: "+this.edad+" cargo: "+this.cargo);
+      }
+      
+    }
+
+    //se establecen los valores
+    let emp1=new Empleado("jose","operador1");
+    emp1.getInfo();  
+    let result=emp1.cargo;
+    document.getElementById("resultado").innerHTML =result;
+  </script>
+
+
+</body>
+
+</html>
