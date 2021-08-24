@@ -1,0 +1,7 @@
+1: para N numeros ingresado por e usuario
+    cambiar el fondo de la pagina para un numero par y para un numero impar
+2: contraseña:
+    para una palabra ingresada por el usuario 
+    si la palabra es correcta enviar a l usuario a otra pagina
+    de lo contrario cambiar el color de la pagina 
+    mostrando un mendaje de error    

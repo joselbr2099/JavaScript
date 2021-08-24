@@ -5,5 +5,5 @@ window.onload=function(){
 document.body.style.background="red";
 
 // regresa a su color original despues de 1 segundo
-setTimeout(() => document.body.style.background = "", 1000);
+setTimeout(() => document.body.style.background = "black", 1000);
 }
