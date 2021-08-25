@@ -1,0 +1,7 @@
+1  desarrolle un programa que calcule el mayor de dos numeros utilizando funciones
+2	 desarrolle un programa que muestre las iniciales en mayuscula de un nombre utilizando funciones
+3  calcule el area de un circulo utililzando funciones area=(PI*(r**2))
+4  determine si un numero ingresado por el usuario es par o impar utililzando funciones
+	 if(num%2==0){
+		  entonces es par
+	 

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  
+
+<body>
+
+  <p>resultado de script abajo</p>
+  <p id="resultado"></p>
+
+  <script>
+    
+    let Junior = new Map([
+      
+      ['SI 206',4],
+      ['BL 300',3],
+      ['SI 310',4],
+      ['TO 313',3],
+      ['BCOM 350',1],
+      ['MO 300',3],
+
+    ]);
+
+    function suma(arrayNumeros){
+      let total=0;
+      for (let valor of arrayNumeros){
+        total+=valor;
+      }
+      return total;
+    }
+
+    let result=suma(Junior.values());
+    document.getElementById("resultado").innerHTML =result;
+  </script>
+
+
+</body>
+
+</html>
