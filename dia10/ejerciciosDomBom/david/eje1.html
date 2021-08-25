@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- <script src="script.js"></script> -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - Clase 10</title>
+</head>
+<body>
+    
+</body>
+<script>
+    window.onload = function () {
+  let number = prompt("Ingrese un numero");
+  if (number%2 == 0) {
+    document.body.style.background = "red";
+    setTimeout(() => (document.body.style.background = ""), 1000);
+  } else {
+    document.body.style.background = "green";
+    setTimeout(() => (document.body.style.background = ""), 1000);
+  }
+};
+</script>
+</html>

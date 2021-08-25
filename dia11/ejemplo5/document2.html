@@ -1,0 +1,23 @@
+<html>
+<body>
+  <div>Begin</div>
+
+  <ul>
+    <li>Information</li>
+  </ul>
+
+  <div>End</div>
+
+  <script>
+	// padre de <body> es <html>
+	alert( document.body.parentNode === document.documentElement ); // true
+
+	// despues <head> se tiene <body>
+	alert( document.head.nextSibling ); // HTMLBodyElement
+
+	// antes <body> se tiene <head>
+	alert( document.body.previousSibling ); // HTMLHeadElement
+  </script>
+  ...more stuff...
+</body>
+</html>
