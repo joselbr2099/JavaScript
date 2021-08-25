@@ -1,0 +1,97 @@
+<html>
+<body>
+  <div id="1id" class="divClass">Begin</div>
+
+  <ul id="2id" class="ulClass">
+    <li class="liClass">
+      <b>Information0</b>
+      <b>Information1</b>
+      <b class="biClass">Information2</b>
+    </li>
+  </ul>
+
+  <div id="3id" class="divClass">Begin2</div>
+
+  <form name="form1" id='form1'>
+    <div class="articulo">Article</div>
+    <div class="articulo2">Article2</div>
+  </form>
+
+  <form name="form2">
+    <div class="articulo3">Article</div>
+    <div class="articulo4">Article2</div>
+  </form>
+
+  <script>
+    /*
+    // se obtiene el dom para el elemento div
+    let elem = document.getElementById('1id');//obtiene la etiqueta por el id
+
+    // le cambiamos el color
+    elem.style.background = 'red';
+
+    //obtenemos el valor de ese elemento
+   console.log("contenido de div ",elem.innerHTML); //elem.innerHTML muestra el contenido de la etiqueta
+
+    //obtengo un nuevo dom para li
+    let liElem = document.getElementById('2id');
+
+    //obtiene todos las etiquetas hijas hasta
+   let elements=liElem.querySelectorAll('ul>li>b'); //selecciona un conjunto de etiquetas
+
+    for(let item of elements){
+          alert(item.innerHTML);
+          console.log(item.innerHTML);
+      }
+
+    //se obtiene un unico elemento
+   alert(liElem.querySelector('li').innerHTML); //selecciona una etiqueta en especifico
+
+    //busqueda
+    for(let item of document.body.children){
+          if(item.matches('div[id$="id"]') || item.matches('ul[id$="id"]') ){ ///similar a una expresion regular
+                alert("el id es :"+item.id+" data:"+item.innerHTML);
+              }   
+    }
+   
+   //etiqueta padre y seleccion usando class
+   let liTag=document.getElementByClassName(".biClass"); //li por el nombre de su clase 
+    alert(liTag.closest(".liClass")); 
+    alert(liTag.closest(".divClass"));//no es padre 
+    alert(liTag.closest(".ulClass"));// 
+  
+    //seleccion de etiquetas por su nombre
+    let divs=document.getElementsByTagName('div'); //retorna una colección que usen esa etiqueta
+    for (let div of divs) {
+          alert( div.innerHTML );
+    }
+*/
+    //seleccion de etiquetas por su nombre
+    let form1=document.getElementsByName('form1'); //retorna la o las etiqueta que usen ese nombre
+    alert(form1.length);//muestra la longitud de la colección
+
+    //verificamos si existe un div dentro de form
+    if(form1[0].contains(form1[0].getElementsByTagName('div')[0])){
+
+     let divs=form1[0].getElementsByTagName('div');
+
+     for(let div of divs){
+        alert(div.innerHTML);
+
+        //reemplazamos
+        div.innerHTML="item1";
+
+        //comparacion
+        if(div.matches('div')){
+              console.log("si es div")
+            }
+      }
+
+    }
+    //comparacion 
+
+  </script>
+
+</body>
+</html>
+

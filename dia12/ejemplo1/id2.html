@@ -1,0 +1,32 @@
+<!doctype html>
+<body>
+
+  <ul id="dd">
+    <li>The</li>
+    <b>jose</b>
+    <li>test</li>
+  </ul>
+
+  <ul>
+    <li>has</li>
+    <li>passed</li>
+  </ul>
+
+  <script>
+    let ulList=document.getElementsByTagName('ul');
+    let ulList2=document.querySelectorAll('ul');
+    alert("hay: "+ulList.length+","+ulList2.length+" etiquetas ul");
+  </script>
+
+  <ul>
+    <li>has</li>
+    <li>passed</li>
+  </ul>
+
+  <script>
+    alert("ahora hay: "+ulList.length+","+ulList2.length+" etiquetas ul");
+    //ulList2 no se actualiza
+  </script>
+
+
+</body>
