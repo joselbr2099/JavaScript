@@ -3,8 +3,10 @@
 
 function getCreds(){
   let user=document.getElementById('exampleInputEmail1');
-  let pasd=document.getElementById('exampleInputEmail1');
-  if (user!="jose"){
+  let pasd=document.getElementById('eexampleInputPassword1');
+  
+	if (user!="jose"){
     alert("error de usuario");
-  }
+  
+	}
 }
