@@ -2,8 +2,7 @@
 "use strict";
 
 function getCreds(){
-  let user=document.getElementById('exampleInputEmail1');
-  let pasd=document.getElementById('eexampleInputPassword1');
+  let user=document.getElementById('exampleInputEmail1').value;
   
 	if (user!="jose"){
     alert("error de usuario");
