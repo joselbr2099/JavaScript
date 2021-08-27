@@ -1,0 +1,51 @@
+<html>
+<body>
+  <div id="1id" class="divClass" onclick="saludo()" > click saludo1</div>
+
+  <div id="divid" class="divClass">click saludo2</div>
+
+  <div id="divid2" class="divClass">click saludo3</div>
+
+  <div id="divid3" class="divClass"  onclick="saludo4(this.innerHTML)">click saludo4</div>
+
+  <input id="input">
+
+  <div id="inputChk">ver input</div>
+
+  <div id="idHandler">handler</div>
+
+  <script>
+    function saludo(){
+          alert("saludo1");
+        }
+
+    //usando propiedades DOM
+    divid.onclick=function(){
+          alert("saludo2");
+        }
+
+    function saludo3(){
+          alert("saludo3");
+        }
+
+    //con atributos
+    function saludo4(msg){
+          alert("saludo4 "+msg);
+        }
+
+    divid2.onclick=saludo3; //forma correcta
+    //divid2.onclick=saludo(); //forma incorrecta
+
+    //usando dom y la propiedad onclick
+    inputChk.onclick=function(){
+          alert(input.value);
+        }
+
+    //usando listeners
+    //idHandler.addEventListener("click", function(){saludo4("desde listener");});
+    //idHandler.addEventListener("click", function(){saludo4("desde listener otra vez");});
+    idHandler.addEventListener("click",saludo3);
+
+    </script>
+  </body>
+</html>

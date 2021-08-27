@@ -1,0 +1,85 @@
+<html>
+<body>
+  <div id="1id" class="divClass">Begin</div>
+
+  <ul id="2id" class="ulClass">
+    <li class="liClass">
+      <b>Information0</b>
+      <b>Information1</b>
+      <b class="biClass">Information2</b>
+    </li>
+  </ul>
+
+  <div id="divid" class="divClass">Begin2</div>
+
+  <form name="form1" id='form1'>
+    <div class="articulo">Article</div>
+    <div class="articulo2">Article2</div>
+  </form>
+
+  <form name="form2">
+    <div class="articulo3">Article</div>
+    <div class="articulo4">Article2</div>
+    <input id="elem" value="value">
+  </form>
+
+  <script>
+
+    /*
+    //ejemplo de innerHTML solo para datos textuales
+    //muestra todo el contenido del documento actual
+    alert(document.body.innerHTML);
+
+    //muestra solo el contenido de un elemento
+    alert(divid.innerHTML);
+   
+    //muestra el contenido mas su propia etiqueta
+    alert(divid.outerHTML);
+
+    //se cambia el valor de un elemento
+    divid.innerHTML="nuevo dato"
+*/
+    //para obtener el campo de texto de un elemento
+    alert(divid.textContent);
+
+    //para remmplazar ese valor
+    divid.textContent="Bolivia";
+
+    //acceso a diferentes propiedades
+    mostrarConsola(elem.type);
+    mostrarConsola(elem.id);
+    mostrarConsola(elem.value);
+
+    //informacion de atributos
+    mostrarConsola(elem.hasAttribute("id")); //verifica la existencia de un atributo
+    mostrarConsola(elem.getAttribute("id")); //obtiene el valor de ese atributo
+    elem.setAttribute("class", "entrada"); //establece el valor de un atributo
+    elem.type="file"; // tambien establece una propiedad(atributo) usando dom
+    mostrarConsola(elem.outerHTML);
+    // elem.removeAttribute(name) borra un atributo
+    /*
+    //se agregan propiedades a las etiquetas
+    document.body.nombre='jose';
+    document.body.numNodes=function(){
+          alert(document.body.childElementCount);
+        }
+
+    alert(document.body.nombre);
+    document.body.numNodes();
+    */ 
+
+    //ejemplo insertar un nodo
+    let div = document.createElement('div');
+    div.className = "message";
+    div.innerHTML = "<strong>Hola!</strong> esto es importante.";
+
+    document.body.append(div);
+
+    function mostrarConsola(msg){
+          console.log(">>> ",msg);
+        }
+  </script>
+
+</body>
+</html>
+
