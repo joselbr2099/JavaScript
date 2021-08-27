@@ -1,0 +1,56 @@
+<html>
+<body>
+  <div id="1id" class="divClass" onclick="saludo(event)" > event1</div>
+
+  <div id="divid" class="divClass">num clicks: </div>
+
+  <div id="divid2" class="divClass">num clicls aqui: </div>
+
+  <div id="divid3" class="divClass">tecla:</div>
+
+  <input id="input">
+
+  <div id="inputChk">ver input</div>
+
+  <div id="idHandler">handler</div>
+
+  <script>
+
+    let click=0;
+    let click2=0;
+
+    function saludo(event){
+          alert("el tipo de vento fue: "+event.type+" coordenadas "+event.clientX + ":" + event.clientY);
+        }
+    
+    function clickSum(event){
+          if(event.type=="mousedown"){
+                click++;
+                divid.innerHTML="num clicks "+click;
+              }
+        }
+
+    function clickSum2(event){
+          click2++;
+          divid2.innerHTML="num clicks aqui "+click2;
+        }
+
+    function getKey(event){
+          divid3.innerHTML="tecla "+event.key;
+          if(event.key=="a"){
+                alert("combinacion");
+              }
+      }
+
+    //listener en el documento completo
+    document.addEventListener('mousedown',clickSum)
+
+    //listener para un elemento
+    divid2.addEventListener('mouseup',clickSum2)
+
+    //lister para teclado
+    document.addEventListener('keydown',getKey);
+
+  </script>
+  </body>
+</html>

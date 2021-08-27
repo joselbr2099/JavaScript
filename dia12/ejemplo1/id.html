@@ -53,19 +53,20 @@
                 alert("el id es :"+item.id+" data:"+item.innerHTML);
               }   
     }
-   
+   */
    //etiqueta padre y seleccion usando class
-   let liTag=document.getElementByClassName(".biClass"); //li por el nombre de su clase 
-    alert(liTag.closest(".liClass")); 
-    alert(liTag.closest(".divClass"));//no es padre 
-    alert(liTag.closest(".ulClass"));// 
-  
+   let liTag=document.getElementsByClassName(".biClass"); //li por el nombre de su clase 
+    alert(liTag);
+   //alert(liTag.Closest(".liClass")); 
+    //alert(liTag.closest(".divClass"));//no es padre 
+    //alert(liTag.closest(".ulClass"));// 
+  /*
     //seleccion de etiquetas por su nombre
     let divs=document.getElementsByTagName('div'); //retorna una colección que usen esa etiqueta
     for (let div of divs) {
           alert( div.innerHTML );
     }
-*/
+
     //seleccion de etiquetas por su nombre
     let form1=document.getElementsByName('form1'); //retorna la o las etiqueta que usen ese nombre
     alert(form1.length);//muestra la longitud de la colección
@@ -89,7 +90,7 @@
 
     }
     //comparacion 
-
+*/
   </script>
 
 </body>
