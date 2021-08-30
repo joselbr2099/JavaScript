@@ -1,0 +1,37 @@
+<!doctype html>
+
+<!-- usando un archivo externo -->
+    <script async src='https://javascript.info/article/script-async-defer/long.js?speed=1'></script>
+    <script async src="https://javascript.info/article/script-async-defer/small.js?speed=1"></script>
+<!-- usando defer -->
+<!--
+<script src='https://javascript.info/article/script-async-defer/long.js?speed=1'></script>
+-->
+<body>
+
+  <div id="mostrar">hola</div>
+  <script>
+    document.addEventListener("DOMContentLoaded",()=> alert("carga completa"));
+    
+    //script dinamico por defecto async=true
+    let script=document.createElement('script');
+    script.src='loadJs.js';
+    script.onload=function(){
+          saludo();
+        }
+    document.body.append(script);
+   
+    //carga externa de una imagen en un div
+    let img=document.createElement('img');
+    img.src='https://media.giphy.com/media/L2KBJGEui1IJZyCLlK/giphy.gif?cid=ecf05e47joed976v0f02uvgvtmm1cg5u9sqlvdlckf7h1xgu&rid=giphy.gif&ct=g';
+    img.onload=function(){
+          console.log("carga de imagen completa");
+        }
+    img.onerror=function(){
+          console.log("error de carga");
+        }
+    mostrar.appendChild(img);
+  </script>
+
+</body>
+

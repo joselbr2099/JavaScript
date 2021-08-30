@@ -1,0 +1,25 @@
+<!doctype html>
+<script>
+  //se ejecutan todos los scripts antes de "DOMContentLoaded"
+  function ready() {
+    alert('DOM is ready');
+
+    // image is not yet loaded (unless it was cached), so the size is 0x0
+    //alert(`Image size: ${img.offsetWidth}x${img.offsetHeight}`);
+    alert(mostrar.innerHTML);
+  }
+
+  //se espera a la ejecucion de los demas scripts 
+  document.addEventListener("DOMContentLoaded", ready);
+</script>
+
+<body>
+
+  <div id="mostrar">hola</div>
+
+  <img src='https://media.giphy.com/media/L2KBJGEui1IJZyCLlK/giphy.gif?cid=ecf05e47joed976v0f02uvgvtmm1cg5u9sqlvdlckf7h1xgu&rid=giphy.gif&ct=g'>
+
+  <script>
+      alert('carga completa')
+  </script>
+</body>

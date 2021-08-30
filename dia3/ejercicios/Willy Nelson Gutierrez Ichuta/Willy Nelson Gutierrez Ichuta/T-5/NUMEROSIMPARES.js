@@ -1,7 +1,3 @@
-
-
-
-
 "use strict";
 let n=0;
 let i=1

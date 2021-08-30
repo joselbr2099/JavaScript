@@ -1,0 +1,28 @@
+<!doctype html>
+<body>
+  <script>
+    //se espera a la carga de todos los elementos del documento incluyendo recursos externos
+    window.onload=function() {
+      alert('DOM is ready');
+  
+      // image is not yet loaded (unless it was cached), so the size is 0x0
+      alert(mostrar.innerHTML);
+    }
+
+    //se ejecuta  cuado se  cierra/cambia la pestaña
+    function unloadWeb(){
+          console.log("el usuario se fue");
+        }
+    
+    window.onbeforeunload = function() {
+        return true;
+      };
+    //document.addEventListener("DOMContentLoaded", ready);
+    document.addEventListener('visibilitychange',unloadWeb);
+  </script>
+
+  <img src='https://media.giphy.com/media/L2KBJGEui1IJZyCLlK/giphy.gif?cid=ecf05e47joed976v0f02uvgvtmm1cg5u9sqlvdlckf7h1xgu&rid=giphy.gif&ct=g'>
+  <div id="mostrar">hola</div>
+  <a href="https://google.com" class="button">Me quiero ir</a>
+
+</body>
