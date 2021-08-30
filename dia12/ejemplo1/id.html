@@ -1,12 +1,13 @@
 <html>
 <body>
+
   <div id="1id" class="divClass">Begin</div>
 
   <ul id="2id" class="ulClass">
     <li class="liClass">
       <b>Information0</b>
       <b>Information1</b>
-      <b class="biClass">Information2</b>
+      <b class="biClass" id="bi">Information2</b>
     </li>
   </ul>
 
@@ -23,7 +24,7 @@
   </form>
 
   <script>
-    /*
+ /*
     // se obtiene el dom para el elemento div
     let elem = document.getElementById('1id');//obtiene la etiqueta por el id
 
@@ -34,18 +35,18 @@
    console.log("contenido de div ",elem.innerHTML); //elem.innerHTML muestra el contenido de la etiqueta
 
     //obtengo un nuevo dom para li
-    let liElem = document.getElementById('2id');
+    let ulElem = document.getElementById('2id');
 
     //obtiene todos las etiquetas hijas hasta
-   let elements=liElem.querySelectorAll('ul>li>b'); //selecciona un conjunto de etiquetas
+   let elements=ulElem.querySelectorAll('ul>li>b'); //selecciona un conjunto de etiquetas
 
     for(let item of elements){
           alert(item.innerHTML);
           console.log(item.innerHTML);
       }
 
-    //se obtiene un unico elemento
-   alert(liElem.querySelector('li').innerHTML); //selecciona una etiqueta en especifico
+  //se obtiene un unico elemento
+   alert(ulElem.querySelector('li').innerHTML); //selecciona una etiqueta en especifico
 
     //busqueda
     for(let item of document.body.children){
@@ -55,12 +56,21 @@
     }
    */
    //etiqueta padre y seleccion usando class
+<<<<<<< HEAD
+   let biTag=document.getElementById("bi"); //li por el nombre de su clase 
+
+    alert(biTag.closest('.liClass') ); 
+    alert(biTag.closest(".divClass"));//no es padre 
+    alert(biTag.closest(".ulClass"));// 
+  
+=======
    let liTag=document.getElementsByClassName(".biClass"); //li por el nombre de su clase 
     alert(liTag);
    //alert(liTag.Closest(".liClass")); 
     //alert(liTag.closest(".divClass"));//no es padre 
     //alert(liTag.closest(".ulClass"));// 
   /*
+>>>>>>> 0e33c43647226c036ee96a87b5c205eb33edaae6
     //seleccion de etiquetas por su nombre
     let divs=document.getElementsByTagName('div'); //retorna una colección que usen esa etiqueta
     for (let div of divs) {
@@ -90,7 +100,10 @@
 
     }
     //comparacion 
+<<<<<<< HEAD
+=======
 */
+>>>>>>> 0e33c43647226c036ee96a87b5c205eb33edaae6
   </script>
 
 </body>
