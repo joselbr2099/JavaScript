@@ -1,0 +1,5 @@
+1 muestre un mensaje cuando se presione un cojunto de teclas
+2 agrege una nueva etiqueta div(o la que guste) al documento actual cada vez que el usuario presione una tecla cualquiera
+3 cambie el color de la etiqueta cada vez que el usuario haga click en ella
+4 sume cuantas veces el mouse pasa sobre una etiqueta5
+5 

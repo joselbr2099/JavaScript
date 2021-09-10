@@ -1,0 +1,40 @@
+<html>
+<body>
+  <div id="1id" class="divClass" onclick="saludo(event)" > event1</div>
+
+  <div id="divid" class="divClass">num clicks: </div>
+
+  <div id="divid2" class="divClass">num clicks aqui: </div>
+
+  <div id="divid3" class="divClass">tecla:</div>
+
+  <input id="input">
+
+  <div id="inputChk">ver input</div>
+
+  <div id="idHandler">handler</div>
+
+  <script>
+		
+		//declaramos una variable para guardar la tecla anterior
+		let tecla='';
+
+    function getKey(event){
+          divid3.innerHTML="tecla "+event.key;
+          tecla+=String(event.key);
+					console.log(">> "+tecla);
+					if(tecla.length==2){
+						if(tecla=="ab"){
+                alert("combinacion correcta");
+						}
+						tecla='';
+					}
+      }
+
+
+    //lister para teclado
+    document.addEventListener('keydown',getKey);
+
+  </script>
+  </body>
+</html>

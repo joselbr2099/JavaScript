@@ -28,7 +28,9 @@
     /*
     //ejemplo de innerHTML solo para datos textuales
     //muestra todo el contenido del documento actual
+
     alert(document.body.innerHTML);
+
 
     //muestra solo el contenido de un elemento
     alert(divid.innerHTML);
@@ -38,11 +40,11 @@
 
     //se cambia el valor de un elemento
     divid.innerHTML="nuevo dato"
-*/
-    //para obtener el campo de texto de un elemento
+
+  //para obtener el campo de texto de un elemento
     alert(divid.textContent);
 
-    //para remmplazar ese valor
+*/    //para remmplazar ese valor
     divid.textContent="Bolivia";
 
     //acceso a diferentes propiedades
@@ -57,7 +59,7 @@
     elem.type="file"; // tambien establece una propiedad(atributo) usando dom
     mostrarConsola(elem.outerHTML);
     // elem.removeAttribute(name) borra un atributo
-    /*
+    
     //se agregan propiedades a las etiquetas
     document.body.nombre='jose';
     document.body.numNodes=function(){
@@ -66,18 +68,22 @@
 
     alert(document.body.nombre);
     document.body.numNodes();
-    */ 
+    
 
     //ejemplo insertar un nodo
     let div = document.createElement('div');
     div.className = "message";
+		div.id="newDiv";
     div.innerHTML = "<strong>Hola!</strong> esto es importante.";
 
     document.body.append(div);
 
+		console.log(div.outerHTML);
+		
     function mostrarConsola(msg){
           console.log(">>> ",msg);
         }
+				
   </script>
 
 </body>
