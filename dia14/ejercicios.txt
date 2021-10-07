@@ -1,0 +1,11 @@
+1 muestre su nombre 10 segundos despues usando callbaks
+2 de rainfall_mi = "1.65, 1.46, 2.05, 3.03, 3.35, 3.46, 2.83, 3.23, 3.5, 2.52, 2.8, 1.85"
+	 cuente cuantos elementos mayores a 3 existen
+	 cuente cuantos elementos mayores a 2 existen en:
+	 cuantos elementos son 1
+	 usando callbaks 
+3 de lst = [5, 10, 3, 8, 94, 2, 4, 9]
+ sume los todos los elementos
+ sume los todos los elementos pares
+ sume los todos los elementos impares
+    

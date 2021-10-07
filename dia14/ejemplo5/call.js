@@ -21,11 +21,14 @@ function loadScript2(src, callback) {
   document.head.append(script);
 };
 
-
-loadScript('call1.js',()=>{saludo();});
 /*
+loadScript('call1.js',()=>{
+	saludo();
+	}
+	);
+*/
 //con errores
-loadScript2('call1.js',function(error, script){
+loadScript2('call2.js',function(error, script){
   if (error){
     console.log("error: "+error);
   }else{
@@ -33,4 +36,3 @@ loadScript2('call1.js',function(error, script){
     saludo();
   }
 });
-*/
